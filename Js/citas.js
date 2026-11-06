@@ -1,3 +1,4 @@
+//Definición de variables
 const formulario = document.getElementById("formCita");
 const selectMascota = document.getElementById("mascota");
 const datosNueva = document.getElementById("datosNueva");
@@ -41,6 +42,7 @@ edad.addEventListener("input", function ()
   edadValor.textContent = edad.value;
 });
 
+//Debe ser una fecha actual, hora específica y días de la semana específicos
 formulario.addEventListener("submit", function (evento)
 {
   evento.preventDefault();

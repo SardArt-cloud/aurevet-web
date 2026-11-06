@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Título y descripción-->
+    <title>AureVet - Contacto</title>
+
+    <meta name="description" content="Escríbenos a AureVet. Resolvemos tus dudas sobre la salud y el cuidado de tu mascota.">
+
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="../CSS/estilos.css">
+
+  </head>
+
+  <body>
+    <!--Encabezado y menú-->
+    <header>
+      <img src="../imagenes/Logo.jpeg" width="200" alt="AureVet logo">
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="citas.html">Citas</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </header>
+
+    <!--Contenido principal de la página-->
+    <main>
+      <h1>Contáctanos</h1>
+      <p>¿Tienes una duda sobre tu mascota? Escríbenos y te responderemos
+        por correo en el horario de atención.</p>
+
+      <section>
+        <h2>Nuestro equipo</h2>
+        <p>Estamos para ayudarte, también en urgencias.</p>
+
+        <!--Tabla-->
+        <table>
+          <thead>
+            <tr>
+              <th>Médico</th>
+              <th>Especialidad</th>
+              <th>Teléfono</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dra. Ana Ríos</td>
+              <td>Medicia general</td>
+              <td>3189085432</td>
+            </tr>
+            <tr>
+              <td>Dr. León Gitz</td>
+              <td>Cirugía</td>
+              <td>3218634590</td>
+            </tr>
+            <tr>
+              <td>Dra. Salina Hernes</td>
+              <td>Especialista</td>
+              <td>3786534521</td>
+            </tr>
+          </tbody>
+        </table>
+        <!--Imágenes-->
+        <img src="/imagenes/EquipoAureVet.jpeg" alt="Equipo AureVet" width="1000">
+        <img src="/imagenes/Domicilio.jpeg" alt="Veterinario a domicilio" width="1000">
+      </section>
+
+      <!--Formulario-->
+      <section>
+        <h2>Formulario de contacto</h2>
+
+        <form id="formContacto" action="#" method="post">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required maxlength="50" placeholder="Ej. Camila Méndez">
+
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" required placeholder="correo@ejemplo.com">
+
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}" title="Escribe 10 números, sin espacios" placeholder="3001234567">
+
+          <label for="asunto">Motivo del mensaje</label>
+          <select id="asunto" name="asunto" required>
+            <option value="">Selecciona un motivo</option>
+            <option value="consulta">Consulta sobre mi mascota</option>
+            <option value="servicios">Información de servicios y tarifas</option>
+            <option value="domicilio">Veterinario a domicilio</option>
+            <option value="adopcion">Adopción</option>
+            <option value="urgencia">Urgencia</option>
+            <option value="otro">Otro</option>
+          </select>
+
+          <label for="comentario">Tu mensaje</label>
+          <textarea id="comentario" name="comentario" required maxlength="500" placeholder="Cuéntanos cómo podemos ayudarte"></textarea>
+          <p class="contador"><span id="cuenta">0</span> / 500</p>
+
+          <label class="aceptar" for="acepto">
+          <input type="checkbox" id="acepto" name="acepto" required>
+            Acepto que AureVet use mis datos para responder a este mensaje.
+          </label>
+
+          <p id="mensaje" role="alert"></p>
+
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </section>
+
+      <!--Link video en YouTube-->
+      <section>
+        <h2>Qué hacer en una urgencia</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Q2zjJbosSkY" title="Cómo actuar ante una urgencia veterinaria - AureVet" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2>Si tu mascota necesita atención inmediata, no esperes respuesta por
+          este formulario: acércate a la clínica o llámanos.</h2>
+      </section>
+    </main>
+
+    <!--Pie de página-->
+    <footer>
+      <p>AureVet - Su bienestar, nuestra excelencia</p>
+      <p>Lunes a Sábado, de 8:00 am a 6:00 pm. Urgencias 24 horas.</p>
+    </footer>
+    <script src="../Js/contacto.js"></script>
+  </body>
+</html>

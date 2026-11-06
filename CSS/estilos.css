@@ -213,14 +213,60 @@ td
   border-bottom: 1px solid #FAF6EC;
 }
 
-/*video,
+video,
 iframe
 {
   max-width: 100%;
   border: 3px solid #C9A96A;
   border-radius: 20px;
 }
-*/
+
+
+#formContacto
+{
+  max-width: 560px;
+}
+
+textarea
+{
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 140px;
+  padding: 12px 16px;
+  border: 2px solid #E3D8B8;
+  border-radius: 14px;
+  background-color: #FFFDF7;
+  font: inherit;
+  resize: vertical;
+}
+
+textarea:focus
+{
+  outline: none;
+  border-color: #1F4D3A;
+}
+
+.contador
+{
+  margin: 4px 0 0;
+  font-size: 0.85rem;
+  text-align: right;
+}
+
+.aceptar
+{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-weight: 400;
+  color: #24352C;
+}
+
+.aceptar input
+{
+  width: auto;
+  margin-top: 6px;
+}
 
 footer
 {

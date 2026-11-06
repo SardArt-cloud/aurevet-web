@@ -4,28 +4,33 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
+      <!--Título y descripción-->
       <title>AureVet- Agenda tu cita</title>
 
       <meta name="description" content="Agenda la cita de tu mascota en AureVet.">
       
-      <link rel="stylesheet" href="estilos.css">
+      <!--Estilos CSS-->
+      <link rel="stylesheet" href="../CSS/estilos.css">
 
     </head>
 
     <body>
+      <!--Encabezado y menú-->
       <header>
-          <img src="imagenes/Logo.jpeg" width="200" alt="AureVet logo">
+          <img src="../imagenes/Logo.jpeg" width="200" alt="AureVet logo">
           <nav>
               <a href="index.html">Inicio</a>
               <a href="citas.html">Citas</a>
               <a href="contacto.html">Contacto</a>
           </nav>
       </header>
-
+      
+      <!--Contenido principal de la página-->
       <main>
         <h1>Agenda tu cita</h1>
         <p>Elige el servicio que necesita(n) tu(s) mascota(s). Te confirmaremos por correo.</p>
 
+        <!--Primer formulario-->
         <section>
           <h2>Formulario de cita</h2>
           <form id="formCita" action="#" method="post">
@@ -58,7 +63,7 @@
             
             <label for="nombreMascota">Nombre de la mascota</label>
             <input type="text" id="nombreMascota" name="nombreMascota" maxlength="30">
-            <label for="edad">Edad: <output id="edadValor">1</output> años</label>
+            <label for="edad">Edad: <output id="edadValor">1</output> año(s)</label>
             <input type="range" id="edad" name="edad" min="0" max="20" step="0.5" value="1">
             <label for="peso">Peso:</label>
             <input type="number" id="peso" name="peso" min="0.5" max="100" step="0.1">
@@ -84,8 +89,8 @@
           </form>
         </section>
 
+        <!--Lista-->
         <section>
-
           <h2>Antes de tu cita</h2>
           <ul>
             <li>Lleva el carné de vacunas</li>
@@ -93,19 +98,22 @@
             <li>Trae a tu mascota con correa o en transportadora</li>
             <li>Llega 10 minutos antes</li>
           </ul>
+
+          <!--Imágenes en carrusel-->
           <div class="carrusel">
-            <img src="imagenes/Instalacion1.jpeg" alt="Consultorio" class="foto">
-            <img src="imagenes/Instalacion2.jpeg" alt="Recepción" Class="foto">
-            <img src="imagenes/Instalacion3.jpeg" alt="Sala de espera" class="foto">
-            <img src="imagenes/Instalacion4.jpeg" alt="Sala de cirugia" class="foto">
-            <img src="imagenes/Vacunacion.jpeg" alt="Siempre vacúnalos" class="foto">
-            <img src="imagenes/Instalacion5.jpeg" alt="Zona de descanso" class="foto">
-            <img src="imagenes/Instalacion6.jpeg" alt="Consultorio 2" class="foto">
-            <img src="imagenes/Instalacion7.jpeg" alt="Consultorio 3" class="foto">
-            <img src="imagenes/Instalacion8.jpeg" alt="Emergencias" class="foto">
+            <img src="../imagenes/Instalacion1.jpeg" alt="Consultorio" class="foto">
+            <img src="../imagenes/Instalacion2.jpeg" alt="Recepción" Class="foto">
+            <img src="../imagenes/Instalacion3.jpeg" alt="Sala de espera" class="foto">
+            <img src="../imagenes/Instalacion4.jpeg" alt="Sala de cirugia" class="foto">
+            <img src="../imagenes/Vacunacion.jpeg" alt="Siempre vacúnalos" class="foto">
+            <img src="../imagenes/Instalacion5.jpeg" alt="Zona de descanso" class="foto">
+            <img src="../imagenes/Instalacion6.jpeg" alt="Consultorio 2" class="foto">
+            <img src="../imagenes/Instalacion7.jpeg" alt="Consultorio 3" class="foto">
+            <img src="../imagenes/Instalacion8.jpeg" alt="Emergencias" class="foto">
           </div>
         </section>
 
+        <!--Tabla-->
         <section>
           <h2>Tarifas</h2>
           <table>
@@ -136,16 +144,13 @@
           </table>
         </section>
 
-        <section>
-          <h2>Cuidados antes de la visita</h2>
-        </section>
-      </main>
-
+        <!--Pie de página-->
       <footer>
         <p>AureVet - su bienestar, nuestra excelencia.</p>
         <p>Lunes a Sábado, de 8:00 am a 6:00 pm. Urgencias 24 horas.</p>
       </footer>
 
-      <script src="citas.js"></script>
+      <!--Unión con JavaScript-->
+      <script src="../Js/citas.js"></script>
     </body>
 </html>
